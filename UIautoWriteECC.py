@@ -119,6 +119,24 @@ def open_paint():
     time.sleep(2)
 
 
+def paint_setting():
+    time.sleep(1)
+    # select brush
+    pgui.click(x=331, y=100)
+    time.sleep(1)
+    pgui.click(x=328, y=222)
+    time.sleep(1)
+    pgui.click(x=632, y=110)
+    time.sleep(1)
+    # select size 8px
+    # pgui.click(x=635, y=126)
+    # select size 16px
+    pgui.click(x=630, y=181)
+    time.sleep(1)
+    # select color by red
+    pgui.click(x=830, y=61)
+
+
 def save():
     pgui.hotkey('ctrl', 's')
     time.sleep(1)
@@ -126,7 +144,7 @@ def save():
     time.sleep(3)
     pgui.hotkey('enter')
     time.sleep(1)
-    pgui.hotkey('Win', 'd')
+    # pgui.hotkey('Win', 'd')
 
 
 # senmon kanji
@@ -219,7 +237,12 @@ def senmon_gakkou():
 
 
 open_paint()
+paint_setting()
 ecc()
 computer()
 senmon_gakkou()
 save()
+
+# get mouse position
+# time.sleep(2)
+# print(pgui.position())

@@ -1,7 +1,11 @@
+# 2021-04-01
+# NoYoN
 from os import dup
+# эйай зурагыг тэкс хэлбэрт шилжүүлэх пакэж
 import pyautogui
 import time
 import cv2
+# user interface удирдах пакэж
 import pytesseract
 from pytesseract.pytesseract import save
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
